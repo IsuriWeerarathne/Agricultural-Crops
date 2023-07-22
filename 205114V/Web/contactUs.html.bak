@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<!-- meta data -->
+		<meta charset="UTF-8">
+		<meta name="description" content="this is my first web page">
+		<meta name="keywords" content="food,travel..//help to indexing">
+		<meta name="viewpoint" content="width=device-width// tells to match with the size of the screen like.. depends on device, initia-scale=1.0">
+		<title> Agriculture|Contact Us </title>
+		<link rel="icon" href="../Images/icon.ico">
+		<link rel="stylesheet" href="../Styles/styles.css" type="text/css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+		<style>
+			.parent{
+				margin:0;
+				padding:0;
+				background-color:#0b1b36;
+			}
+			.middle-main-wrap{
+				width:100%;
+				height:10%;
+				
+			}
+			.column-left-right {
+					float: left;
+					width: 20%;
+					height:800px;
+			}
+			.column-middle {
+					float: left;
+					width: 60%;
+					background-color:#c2d3ed;
+					height:800px;
+					border:#800303;
+					border-width:6px;
+					border-style:solid;
+			}
+			
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			.bottom-part{
+				width:100%;
+				height:10%;
+				
+			}
+			input,select{
+				border: none;
+				border-bottom: 2px solid red;
+			}
+
+			.column-left {
+				float: left;
+				width: 40%;
+				<!--/*background-color:#f5a4a4;*/-->
+				height:720px;
+				padding-left:25px;
+			}
+			.column-right {
+				float: left;
+				width: 50%;
+			}
+
+			.row:after {
+				content: "";
+				display: table;
+				clear: both;
+			}
+			table,th,td{
+				border:1px solid red;
+			}
+			img {
+				opacity: 0.5;
+				width:90%;
+				height:auto;
+				display: block;
+				margin-left: 0;
+				margin-right: auto;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="parent">
+			<div class="top-nav">
+				<nav>
+					<div class="left-nav">
+						<a href="home.html"><h2> Home </h2></a>
+					</div>
+					
+					<div class="right-nav">
+						<UL class="right-nav-ul">
+							<a href="intro.html"> <li class="right-nav-ul-li">Intro</li></a>
+							<a href="cornAgriculture.html"> <li class="right-nav-ul-li">Corn</li></a>
+							<a href="fruitAgriculture.html"> <li class="right-nav-ul-li">Fruits</li></a>
+							<a href="cottonAgriculture.html"> <li class="right-nav-ul-li">Cotton</li></a>
+							<a href="peanutsAgriculture.html"> <li class="right-nav-ul-li">Peanuts</li></a>
+							<a href="flowersAgriculture.html"> <li class="right-nav-ul-li">Flowers</li></a>
+							
+						</ul>
+					</div>
+				</nav>
+			</div>
+			
+			<div class="middle-main-wrap">
+				<br><h1><span style="color:#ed420e; font-style:bold;"> Contact Us</span></h1><br>
+			</div>
+			
+			<div class="row">
+				<div class="column-left-right">
+				
+				</div>
+				
+				<div class="column-middle">
+					<br><h3> Please fill the below form</h3>
+					<form name="user-details" action="home.html" method="post">
+					<br>
+						<div class="row">
+							<div class="column-left">
+								<label><b>First Name* :</b></label><br><br>
+								<label><b>Last Name* :</b></label><br><br>
+								<label><b>Email Address  :</b></label><br><br>
+								<label><b>Address :</b></label><br><br>
+								<label><b>Main City :</b></label><br><br>
+								<label><b>Select Your Provice*  :</b></label><br><br>
+								<label><b>Gender*  :</b></label><br><br>
+								<label><b>Select Your Interests  :</b></label><br><br><br>
+								<input type="submit" value="Submit">
+								<input type="reset" value="Reset" >
+								<br><br>
+								<table><caption>Contact Details</caption>
+									<tr>
+										<th>Name</th>
+										<th>Phone No</th>
+										<th>position</th>	
+									</tr>
+									<tr>
+										<td>Mr.Sudath</td>
+										<td>071-111223</td>
+										<td rowspan="2">Manager</td>	
+									</tr>
+									<tr>
+										<td>Mr.Kapila</td>
+										<td>071-111223</td>
+									</tr>
+									<tr>
+										<td>Miss. Kumudu</td>
+										<td>071-111223</td>
+										<td>CEO</td>	
+									</tr>
+									<tr>
+										<td colspan="3"> Hotline - 122333  </td>
+									</tr>
+								</table>
+								
+							</div>
+							<div class="column-right">
+								<input type="text" name="fName" size="40" maxlength="50" ><br><br>
+								<input type="text" name="lName" size="40" maxlength="50" ><br><br>
+								<input type="email" name="email" size="45"><br><br>
+								<input type="text" name="address" size="45"> <br><br>
+								<input type="text" name="city" size="40"> <br><br>
+								<select name="province">
+									<option value="western">Western</option>
+									<option value="eastern">Eastern</option>
+									<option value="Sabara">Sabaragamuwa</option>
+									<option value="North">North</option>
+									<option value="western">Western</option>
+									<option value="eastern">Eastern</option>
+									<option value="Sabara">Sabaragamuwa</option>
+									<option value="North">North</option>
+								</select><br><br>
+								<input type="radio" name="gender" value="Female">Female
+								<input type="radio" name="gender" value="male">Male
+								<br><br>
+								<input type="checkbox" name="interests" value="Farming">Farming
+								<input type="checkbox" name="interests" value="sports">Sports
+								<input type="checkbox" name="interests" value="travel">Travel
+								<input type="checkbox" name="interests" value="programming">Programming
+								<input type="checkbox" name="interests" value="Science">Science
+								<br><br><br>
+								<img src="../Images/contact.jpeg" alt="Image">
+								
+							</div>
+						</div>
+					
+					</form>
+				</div>				
+			</div>
+			
+			<div class="bottom-part">
+				<marquee width="60%" direction="left" height="100px">
+					<span style="color:#dcdfe6;font-size:28px;">
+						<br>Thank you for using the website - "Agriculture"
+					</span>
+				</marquee>
+			</div>
+		
+		</div>
+	</body>
+</html>
